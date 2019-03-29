@@ -19,6 +19,8 @@ while True:
             print("numero es cero ####")
             break
         exponente=int(input("ingrese el exponente"))
+        result=a_power_b(base,exponente)
+        print("el resultado de su potencia es: ",result)
     except ValueError:
         print("ingreso una letra")
     except StopIteration:
