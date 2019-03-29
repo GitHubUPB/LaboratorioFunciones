@@ -5,14 +5,21 @@ def a_power_b (a,b):
         prod=prod*a
         return prod
 
+
 #codigo
 
-base=int(input("ingrese la base"))
-exponente=int(input("ingrese el exponente"))
+while True:
+    
+    base=int(input("ingrese la base"))
+    if base ==0:
+        print("numero es cero ####")
+        break
+    exponente=int(input("ingrese el exponente"))
+    result=a_power_b(base,exponente)
+    print("el resultado de su potencia es: ",result)
+    if base ==0:
+        break
 
-result=a_power_b(base,exponente)
-
-print("el resultado de su potencia es: ",result)
 
 
 
